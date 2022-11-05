@@ -10,7 +10,7 @@
   </parent>
 
   <artifactId>record-builder-parent</artifactId>
-  <version>0.1.0</version>
+  <version>0.1.1-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <properties>
@@ -31,8 +31,4 @@
       </plugin>
     </plugins>
   </build>
-
-  <scm>
-    <tag>record-builder-0.1.0</tag>
-  </scm>
 </project>
