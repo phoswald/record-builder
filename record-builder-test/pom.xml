@@ -9,7 +9,9 @@
   </parent>
 
   <artifactId>record-builder-test</artifactId>
-  
+
+  <name>${project.groupId}:${project.artifactId}</name>
+
   <dependencies>
     <dependency>
       <groupId>com.github.phoswald</groupId>

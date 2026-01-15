@@ -5,13 +5,15 @@
   <parent>
     <groupId>com.github.phoswald</groupId>
     <artifactId>sonatype-pom</artifactId>
-    <version>1.0.1</version>
-    <relativePath />
+    <version>2.0.2</version>
   </parent>
 
   <artifactId>record-builder-parent</artifactId>
   <version>0.2.0-SNAPSHOT</version>
   <packaging>pom</packaging>
+
+  <name>${project.groupId}:${project.artifactId}</name>
+  <description>Record Builder Annotation Processor</description>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -34,4 +36,12 @@
       </plugin>
     </plugins>
   </build>
+
+  <scm>
+    <connection>scm:git:git@github.com:phoswald/record-builder.git</connection>
+    <developerConnection>scm:git:git@github.com:phoswald/record-builder.git</developerConnection>
+    <url>https://github.com/phoswald/record-builder/tree/master</url>
+    <tag>HEAD</tag>
+  </scm>
+
 </project>
