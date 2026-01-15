@@ -21,7 +21,7 @@ import javax.tools.Diagnostic;
 import javax.tools.JavaFileObject;
 
 @SupportedAnnotationTypes("com.github.phoswald.record.builder.RecordBuilder")
-@SupportedSourceVersion(SourceVersion.RELEASE_17)
+@SupportedSourceVersion(SourceVersion.RELEASE_25)
 public class RecordBuilderProcessor extends AbstractProcessor {
 
     @Override
@@ -89,7 +89,7 @@ public class RecordBuilderProcessor extends AbstractProcessor {
         return new RecordInfo( //
                 getPackageName(type), //
                 getFullClassName(type), //
-                type.getSimpleName().toString() + "Builder", //
+                type.getSimpleName() + "Builder", //
                 type.getModifiers().contains(Modifier.PUBLIC), //
                 type.getRecordComponents().stream() //
                         .map(rc -> new RecordComponentInfo(rc.getSimpleName().toString(), rc.asType().toString())) //
@@ -122,7 +122,7 @@ public class RecordBuilderProcessor extends AbstractProcessor {
             boolean isPublic, //
             List<RecordComponentInfo> components) {
         private List<String> componentNames() {
-            return components().stream().map(comp -> comp.name()).toList();
+            return components().stream().map(RecordComponentInfo::name).toList();
         }
     }
 
