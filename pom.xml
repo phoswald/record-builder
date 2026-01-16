@@ -14,10 +14,11 @@
 
   <name>${project.groupId}:${project.artifactId}</name>
   <description>Record Builder Annotation Processor</description>
+  <url>https://github.com/phoswald/record-builder</url>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.compiler.release>25</maven.compiler.release>
+    <maven.compiler.release>17</maven.compiler.release>
   </properties>
   
   <modules>
