@@ -9,7 +9,7 @@
   </parent>
 
   <artifactId>record-builder-parent</artifactId>
-  <version>0.2.0-SNAPSHOT</version>
+  <version>0.2.0</version>
   <packaging>pom</packaging>
 
   <name>${project.groupId}:${project.artifactId}</name>
@@ -41,7 +41,7 @@
     <connection>scm:git:git@github.com:phoswald/record-builder.git</connection>
     <developerConnection>scm:git:git@github.com:phoswald/record-builder.git</developerConnection>
     <url>https://github.com/phoswald/record-builder/tree/master</url>
-    <tag>HEAD</tag>
+    <tag>record-builder-parent-0.2.0</tag>
   </scm>
 
 </project>
